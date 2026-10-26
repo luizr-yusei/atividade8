@@ -1,0 +1,733 @@
+
+/* ==================================
+   CONFIGURAÇÕES GERAIS
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #070d18;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ==================================
+   CABEÇALHO
+================================== */
+
+.cabecalho {
+    width: 100%;
+    padding: 22px 8%;
+    background: #050a12;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid #007bff;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.logo span,
+footer span {
+    color: #008cff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* ==================================
+   BANNER
+================================== */
+
+.banner {
+    min-height: 420px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        radial-gradient(circle at 80% 50%, #064b91, transparent 40%),
+        linear-gradient(120deg, #07111f, #102e54, #06101d);
+
+    overflow: hidden;
+}
+
+.banner-conteudo {
+    max-width: 650px;
+}
+
+.subtitulo {
+    color: #00aaff;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.banner h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.banner h1 span {
+    color: #008cff;
+}
+
+.banner-conteudo p {
+    color: #c6d8ed;
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 550px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+
+    background: #008cff;
+    color: white;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #0056a8;
+    transform: translateY(-4px);
+}
+
+.banner-detalhe {
+    text-align: center;
+    padding: 25px;
+}
+
+.banner-detalhe span {
+    font-size: 140px;
+    font-weight: 900;
+    color: rgba(0, 174, 255, 0.12);
+}
+
+.banner-detalhe p {
+    color: #00aaff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* ==================================
+   TÍTULOS DAS SEÇÕES
+================================== */
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.numero-secao {
+    color: #008cff;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.titulo-secao h2 {
+    font-size: 30px;
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.titulo-secao p {
+    color: #9eb3ca;
+    font-size: 14px;
+}
+
+/* ==================================
+   ESTATÍSTICAS
+================================== */
+
+.estatisticas {
+    padding: 80px 8%;
+}
+
+.cards-estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-estatistica {
+    padding: 30px 20px;
+    text-align: center;
+
+    background: #101d30;
+    border: 1px solid #174c85;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.card-estatistica:hover {
+    transform: translateY(-7px);
+    border-color: #00aaff;
+}
+
+.card-icone {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card-estatistica h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card-estatistica strong {
+    display: block;
+    color: #00aaff;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card-estatistica p {
+    color: #9eb3ca;
+    font-size: 12px;
+}
+
+.observacao {
+    text-align: right;
+    color: #73869c;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+/* ==================================
+   JOGADORES
+================================== */
+
+.jogadores {
+    padding: 80px 8%;
+    background: #0a1424;
+}
+
+.cards-jogadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card-jogador {
+    min-height: 220px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(140deg, #142e4e, #0c1728);
+    border: 1px solid #174c85;
+    border-left: 4px solid #008cff;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.card-jogador:hover {
+    transform: translateY(-6px);
+    border-color: #00aaff;
+}
+
+.jogador-numero {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    font-size: 95px;
+    font-weight: 900;
+
+    color: rgba(0, 140, 255, 0.13);
+}
+
+.jogador-info {
+    position: relative;
+    z-index: 1;
+}
+
+.jogador-info span {
+    color: #00aaff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.jogador-info h3 {
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.jogador-info p {
+    color: #b5c8dc;
+    font-size: 14px;
+}
+
+.botao-perfil {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 25px;
+    padding: 12px 18px;
+
+    background: #008cff;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-perfil:hover {
+    background: #0056a8;
+    transform: translateX(5px);
+}
+
+/* ==================================
+   MODAL DOS JOGADORES
+================================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background: rgba(0, 0, 0, 0.88);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-conteudo {
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+
+    background: #101d30;
+
+    border: 2px solid #008cff;
+    border-radius: 12px;
+
+    overflow: auto;
+
+    animation: abrirModal 0.3s ease;
+}
+
+@keyframes abrirModal {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* IMAGEM DO JOGADOR */
+
+.modal-imagem {
+    width: 45%;
+    min-height: 420px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #07111f;
+}
+
+.modal-imagem img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+}
+
+.imagem-fallback {
+    padding: 30px;
+    text-align: center;
+    color: #00aaff;
+}
+
+.imagem-fallback span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.imagem-fallback p {
+    color: #aabbd0;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+/* INFORMAÇÕES */
+
+.modal-informacoes {
+    width: 55%;
+    padding: 40px 30px;
+}
+
+.etiqueta {
+    color: #00aaff;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.modal-informacoes h2 {
+    font-size: 29px;
+    margin: 18px 0;
+    color: #ffffff;
+}
+
+.descricao-jogador {
+    color: #bdcde0;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.linha-detalhe {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 12px 0;
+    border-top: 1px solid #1b3858;
+}
+
+.linha-detalhe span {
+    color: #008cff;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.linha-detalhe strong {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* BOTÃO FECHAR */
+
+.fechar-modal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+
+    width: 35px;
+    height: 35px;
+
+    background: #008cff;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 25px;
+    line-height: 1;
+
+    transition: 0.3s;
+}
+
+.fechar-modal:hover {
+    background: #0056a8;
+    transform: rotate(90deg);
+}
+
+/* ==================================
+   CONTROLE
+================================== */
+
+.controle {
+    padding: 80px 8%;
+}
+
+.controle-caixa {
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+
+    background: #101d30;
+    border: 1px solid #174c85;
+    border-radius: 10px;
+}
+
+.status-sistema {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-indicador {
+    width: 15px;
+    height: 15px;
+
+    display: inline-block;
+
+    background: #ffaa00;
+    border-radius: 50%;
+}
+
+.status-indicador.online {
+    background: #00e676;
+    box-shadow: 0 0 12px #00e676;
+}
+
+.status-indicador.offline {
+    background: #ff4444;
+    box-shadow: 0 0 12px #ff4444;
+}
+
+.status-sistema h3 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.status-sistema p {
+    font-size: 13px;
+    color: #9eb3ca;
+}
+
+.botoes-controle {
+    display: flex;
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.botoes-controle button {
+    flex: 1;
+    padding: 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-iniciar {
+    background: #008cff;
+}
+
+.botao-iniciar:hover {
+    background: #0056a8;
+}
+
+.botao-parar {
+    background: #c83232;
+}
+
+.botao-parar:hover {
+    background: #941e1e;
+}
+
+.mensagem-controle {
+    color: #00aaff;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ==================================
+   RODAPÉ
+================================== */
+
+footer {
+    background: #050a12;
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 2px solid #007bff;
+}
+
+footer h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #9eb3ca;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* ==================================
+   RESPONSIVIDADE
+================================== */
+
+@media (max-width: 900px) {
+
+    .cards-estatisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-detalhe span {
+        font-size: 100px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner {
+        min-height: 350px;
+        padding: 55px 7%;
+    }
+
+    .banner-detalhe {
+        display: none;
+    }
+
+    .estatisticas,
+    .jogadores,
+    .controle {
+        padding: 60px 6%;
+    }
+
+    .cards-estatisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-jogadores {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-secao h2 {
+        font-size: 23px;
+    }
+
+    .modal {
+        padding: 12px;
+    }
+
+    .modal-conteudo {
+        flex-direction: column;
+        max-height: 92vh;
+    }
+
+    .modal-imagem {
+        width: 100%;
+        min-height: 230px;
+    }
+
+    .modal-imagem img {
+        height: 230px;
+    }
+
+    .modal-informacoes {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .modal-informacoes h2 {
+        font-size: 24px;
+    }
+
+    .botoes-controle {
+        flex-direction: column;
+    }
+
+    .controle-caixa {
+        padding: 25px 18px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}

@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Painel Blue Lock: acompanhe jogadores, estatísticas e desempenho dos maiores talentos do futebol.">
+
+    <meta name="keywords" content="Blue Lock, futebol, Isagi, Rin, Bachira, jogadores">
+
+    <meta name="author" content="Projeto Blue Lock">
+
+    <title>BLUE LOCK | Painel de Controle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <a href="#inicio" class="logo">
+            BLUE <span>LOCK</span>
+        </a>
+
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#estatisticas">Estatísticas</a></li>
+                <li><a href="#jogadores">Jogadores</a></li>
+                <li><a href="#controle">Controle</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+
+        <section class="banner" id="inicio">
+
+            <div class="banner-conteudo">
+
+                <span class="subtitulo">PROJETO BLUE LOCK</span>
+
+                <h1>DESPERTE SEU <span>EGO</span></h1>
+
+                <p>
+                    Bem-vindo ao centro de monitoramento Blue Lock.
+                    Acompanhe os jogadores, analise suas habilidades
+                    e descubra quem possui potencial para se tornar
+                    o melhor atacante do mundo.
+                </p>
+
+                <a href="#jogadores" class="botao">
+                    CONHECER JOGADORES
+                </a>
+
+            </div>
+
+            <div class="banner-detalhe">
+                <span>BL</span>
+                <p>ONLY THE BEST<br>STRIKER SURVIVES</p>
+            </div>
+
+        </section>
+
+        <!-- ESTATÍSTICAS -->
+
+        <section class="estatisticas" id="estatisticas">
+
+            <div class="titulo-secao">
+
+                <span class="numero-secao">01 / MONITORAMENTO</span>
+
+                <h2>PAINEL DE TELEMETRIA</h2>
+
+                <p>
+                    Dados gerais do projeto Blue Lock.
+                </p>
+
+            </div>
+
+            <div class="cards-estatisticas">
+
+                <article class="card-estatistica">
+
+                    <div class="card-icone">⚽</div>
+
+                    <h3>Participantes</h3>
+
+                    <strong>300</strong>
+
+                    <p>Jogadores iniciais</p>
+
+                </article>
+
+                <article class="card-estatistica">
+
+                    <div class="card-icone">🏆</div>
+
+                    <h3>Eliminados</h3>
+
+                    <strong>277</strong>
+
+                    <p>Participantes eliminados</p>
+
+                </article>
+
+                <article class="card-estatistica">
+
+                    <div class="card-icone">🔥</div>
+
+                    <h3>Sobreviventes</h3>
+
+                    <strong>23</strong>
+
+                    <p>Jogadores restantes</p>
+
+                </article>
+
+                <article class="card-estatistica">
+
+                    <div class="card-icone">📊</div>
+
+                    <h3>Desempenho</h3>
+
+                    <strong>95%</strong>
+
+                    <p>Índice demonstrativo</p>
+
+                </article>
+
+            </div>
+
+            <p class="observacao">
+                * Estatísticas ilustrativas para fins acadêmicos.
+            </p>
+
+        </section>
+
+        <!-- JOGADORES -->
+
+        <section class="jogadores" id="jogadores">
+
+            <div class="titulo-secao">
+
+                <span class="numero-secao">02 / ELENCO</span>
+
+                <h2>JOGADORES EM DESTAQUE</h2>
+
+                <p>
+                    Selecione um jogador para visualizar seu perfil completo.
+                </p>
+
+            </div>
+
+            <div class="cards-jogadores">
+
+                <article class="card-jogador">
+
+                    <div class="jogador-numero">11</div>
+
+                    <div class="jogador-info">
+                        <span>BASTARD MÜNCHEN</span>
+                        <h3>Yoichi Isagi</h3>
+                        <p>Arma: Metavisão</p>
+                    </div>
+
+                    <button class="botao-perfil"
+                        type="button"
+                        data-jogador="isagi">
+                        VER PERFIL →
+                    </button>
+
+                </article>
+
+                <article class="card-jogador">
+
+                    <div class="jogador-numero">10</div>
+
+                    <div class="jogador-info">
+                        <span>PARIS X GEN</span>
+                        <h3>Rin Itoshi</h3>
+                        <p>Arma: Precisão e controle</p>
+                    </div>
+
+                    <button class="botao-perfil"
+                        type="button"
+                        data-jogador="rin">
+                        VER PERFIL →
+                    </button>
+
+                </article>
+
+                <article class="card-jogador">
+
+    <div class="jogador-numero">13</div>
+
+    <div class="jogador-info">
+        <span>UBERS</span>
+        <h3>Shoei Barou</h3>
+        <p>Arma: Poder físico e finalização</p>
+    </div>
+
+    <button class="botao-perfil"
+        type="button"
+        data-jogador="barou">
+        VER PERFIL →
+    </button>
+
+</article>
+
+
+              <article class="card-jogador">
+
+    <div class="jogador-numero">99</div>
+
+    <div class="jogador-info">
+        <span>PARIS X GEN</span>
+        <h3>Ryusei Shidou</h3>
+        <p>Arma: Instinto e finalização</p>
+    </div>
+
+    <button class="botao-perfil"
+        type="button"
+        data-jogador="shidou">
+        VER PERFIL →
+    </button>
+
+</article>
+
+            </div>
+
+        </section>
+
+        <!-- MODAL DE INFORMAÇÕES -->
+
+        <section class="modal" id="modalJogador"
+            aria-hidden="true">
+
+            <div class="modal-conteudo"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="nomeJogador">
+
+                <button class="fechar-modal"
+                    id="fecharModal"
+                    type="button"
+                    aria-label="Fechar perfil">
+                    ×
+                </button>
+
+                <div class="modal-imagem">
+
+                    <img id="imagemJogador"
+                        src=""
+                        alt="Imagem do jogador">
+
+                    <div id="imagemFallback" class="imagem-fallback" hidden>
+                        <span>BLUE LOCK</span>
+                        <p>Adicione a imagem do jogador na pasta imagens.</p>
+                    </div>
+
+                </div>
+
+                <div class="modal-informacoes">
+
+                    <span class="etiqueta">BLUE LOCK PLAYER</span>
+
+                    <h2 id="nomeJogador">Nome do jogador</h2>
+
+                    <p id="descricaoJogador" class="descricao-jogador"></p>
+
+                    <div class="linha-detalhe">
+                        <span>IDADE</span>
+                        <strong id="idadeJogador"></strong>
+                    </div>
+
+                    <div class="linha-detalhe">
+                        <span>ALTURA</span>
+                        <strong id="alturaJogador"></strong>
+                    </div>
+
+                    <div class="linha-detalhe">
+                        <span>ARMA PRINCIPAL</span>
+                        <strong id="armaJogador"></strong>
+                    </div>
+
+                    <div class="linha-detalhe">
+                        <span>TIME</span>
+                        <strong id="timeJogador"></strong>
+                    </div>
+
+                    <div class="linha-detalhe">
+                        <span>POSIÇÃO</span>
+                        <strong id="posicaoJogador"></strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PAINEL DE ACIONAMENTO -->
+
+        <section class="controle" id="controle">
+
+            <div class="titulo-secao">
+
+                <span class="numero-secao">03 / SISTEMA</span>
+
+                <h2>PAINEL DE ACIONAMENTO</h2>
+
+                <p>
+                    Controle o sistema de treinamento Blue Lock.
+                </p>
+
+            </div>
+
+            <div class="controle-caixa">
+
+                <div class="status-sistema">
+
+                    <span class="status-indicador" id="indicadorStatus"></span>
+
+                    <div>
+                        <h3 id="tituloStatus">Sistema em espera</h3>
+                        <p id="descricaoStatus">
+                            Aguardando comando do usuário.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="botoes-controle">
+
+                    <button type="button"
+                        class="botao-iniciar"
+                        id="btnIniciar">
+                        INICIAR TREINAMENTO
+                    </button>
+
+                    <button type="button"
+                        class="botao-parar"
+                        id="btnParar">
+                        PARAR TREINAMENTO
+                    </button>
+
+                </div>
+
+                <p class="mensagem-controle" id="mensagemControle"
+                    aria-live="polite">
+                    Nenhum comando executado.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <h2>BLUE <span>LOCK</span></h2>
+
+        <p>Projeto acadêmico de desenvolvimento web.</p>
+
+        <p>© 2026 - Painel de Controle Blue Lock</p>
+
+    </footer>
+
+</body>
+
+</html>
